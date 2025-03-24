@@ -79,7 +79,7 @@ const TipModal = () => {
 
   return (
     <Modal centered fullscreen="sm" backdrop='static' isOpen={isOpen} toggle={toggle}>
-      <ModalHeader className="border-0">
+      <ModalHeader className="border-0" toggle={toggle}>
         Se liga nas dicas!
       </ModalHeader>
       <ModalBody className="text-center d-flex flex-column align-items-center justify-content-center">
