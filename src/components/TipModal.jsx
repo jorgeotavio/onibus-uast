@@ -1,5 +1,5 @@
+import { useCallback, useState } from "react";
 import { HandPeace, HandWaving, MapTrifold, Warning } from "@phosphor-icons/react";
-import React, { useCallback, useState } from "react";
 import { useLocation, useSearchParams } from "react-router-dom";
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
 

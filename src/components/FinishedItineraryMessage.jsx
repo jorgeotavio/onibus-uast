@@ -1,5 +1,4 @@
 import { Info } from "@phosphor-icons/react";
-import { Card, CardBody } from "reactstrap";
 
 const FinishedItineraryMessage = () => {
   return (

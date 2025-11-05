@@ -1,4 +1,3 @@
-import React from "react";
 import { Col } from "reactstrap";
 import { ArrowLeft } from "@phosphor-icons/react";
 import { useNavigate } from "react-router-dom";

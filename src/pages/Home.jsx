@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { Card, CardBody, Col } from "reactstrap";
 import { ArrowRight, HandPeace, Info, MapPin, Van } from "@phosphor-icons/react";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
