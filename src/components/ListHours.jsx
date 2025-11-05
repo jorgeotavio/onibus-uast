@@ -3,6 +3,7 @@ import useNextBusTime from "../hooks/useNextBusTime";
 import { Clock, Star, XCircle } from "@phosphor-icons/react";
 import { useState } from "react";
 import FinishedItineraryMessage from "./FinishedItineraryMessage";
+import PropTypes from 'prop-types';
 
 const ListHours = ({ hours }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,5 +63,9 @@ const ListHours = ({ hours }) => {
     </div>
   );
 };
+
+ListHours.propTypes = {
+  hours: PropTypes.string
+}
 
 export default ListHours;

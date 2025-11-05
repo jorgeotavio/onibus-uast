@@ -1,4 +1,3 @@
-import React from "react";
 import MapComponent from "../components/MapComponent";
 import BusStopList from "../components/BusStopList";
 import { Card, CardBody, Col } from "reactstrap";

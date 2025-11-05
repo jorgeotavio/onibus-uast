@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet-routing-machine';
+import PropTypes from 'prop-types';
 
 const RouteFinder = ({ busStops }) => {
   const [origin, setOrigin] = useState('');
@@ -27,21 +28,25 @@ const RouteFinder = ({ busStops }) => {
 
   return (
     <div>
-      <input 
-        type="text" 
-        value={origin} 
-        onChange={e => setOrigin(e.target.value)} 
-        placeholder="Origem" 
+      <input
+        type="text"
+        value={origin}
+        onChange={e => setOrigin(e.target.value)}
+        placeholder="Origem"
       />
-      <input 
-        type="text" 
-        value={destination} 
-        onChange={e => setDestination(e.target.value)} 
-        placeholder="Destino" 
+      <input
+        type="text"
+        value={destination}
+        onChange={e => setDestination(e.target.value)}
+        placeholder="Destino"
       />
       <button onClick={findRoute}>Encontrar Rota</button>
     </div>
   );
 };
+
+RouteFinder.propTypes = {
+  busStops: PropTypes.array
+}
 
 export default RouteFinder;

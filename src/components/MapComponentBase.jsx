@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { useMap } from "react-leaflet";
 import useCurrentBusStop from "../hooks/useCurrentBusStop";
 import useItineraries from "../hooks/useItineraries";
@@ -11,7 +11,7 @@ function MapComponentBase() {
   // const position = useUserCurrentPosition();
 
   // let center = position ? [position.latitude, position.longitude] : [-7.9820696461839695, -38.29091520605652];
-  let center = [-7.9628707731104935, -38.29134606557274];
+  let center = useMemo(() => [-7.9628707731104935, -38.29134606557274], []);
   let zoom = 13;
 
   if (currentBusStop) {
