@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Card, CardBody, Col, Input, Row, Collapse } from "reactstrap";
 import useItineraries from "../hooks/useItineraries";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";

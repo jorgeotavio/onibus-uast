@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import useCurrentBusStop from '../hooks/useCurrentBusStop';
 import useBusStops from '../hooks/useBusStops';

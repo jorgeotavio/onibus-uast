@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useState } from "react";
 import { Button, Modal, ModalBody, ModalHeader } from "reactstrap";
 import useNearestBusStop from "../hooks/useNearestBusStop";
 import { MapPin, MapPinArea } from "@phosphor-icons/react";
